@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ems.LoginPage">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="241.0" style="-fx-background-color: #7A9E9F;">
+         <children>
+            <Label layoutX="83.0" layoutY="14.0" text="EMS" textFill="WHITE">
+               <font>
+                  <Font name="Lato Light Italic" size="35.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="190.0" fitWidth="190.0" layoutX="26.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/exam.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="430.0" prefWidth="540.0">
+         <children>
+            <Label layoutX="111.0" layoutY="195.0" text="Password">
+               <font>
+                  <Font name="Lato Semibold Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_username" layoutX="286.0" layoutY="143.0" />
+            <PasswordField fx:id="tf_password" layoutX="286.0" layoutY="195.0" />
+            <Button fx:id="button_login" layoutX="139.0" layoutY="324.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="46.0" prefWidth="86.0" text="Login">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="197.0" layoutY="14.0" text="Welcome" textFill="WHITE">
+               <font>
+                  <Font name="Lato Semibold Italic" size="35.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_exit" layoutX="337.0" layoutY="324.0" mnemonicParsing="false" onAction="#userExit" prefHeight="46.0" prefWidth="81.0" text="Exit">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="label_infoWrong" layoutX="127.0" layoutY="59.0" textFill="RED" wrapText="true">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="144.0" text="Username">
+               <font>
+                  <Font name="Lato Semibold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ems.AnswerExam2">
+   <children>
+      <AnchorPane prefHeight="430.0" prefWidth="760.0">
+         <children>
+            <Label layoutX="505.0" layoutY="14.0" prefHeight="46.0" prefWidth="134.0" text="Exam ID:" textFill="#636363">
+               <font>
+                  <Font name="Lato Semibold Italic" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_question" alignment="CENTER" layoutX="9.0" layoutY="68.0" prefHeight="76.0" prefWidth="741.0" text="QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ" textFill="#919191" wrapText="true">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="46.0" prefWidth="195.0" text="Course Code:" textFill="#616161">
+               <font>
+                  <Font name="Lato Semibold Italic" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_examID" alignment="CENTER" layoutX="639.0" layoutY="14.0" prefHeight="46.0" prefWidth="79.0" text="999" textFill="#232323">
+               <font>
+                  <Font name="Lato Semibold Italic" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_courseCode" layoutX="222.0" layoutY="14.0" prefHeight="46.0" prefWidth="229.0" text="EDP1001" textFill="#181818">
+               <font>
+                  <Font name="Lato Semibold Italic" size="35.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_nextQ" layoutX="497.0" layoutY="357.0" mnemonicParsing="false" onAction="#goNext" prefHeight="41.0" prefWidth="93.0" text="Next">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Label fx:id="label_answer1" layoutX="32.0" layoutY="168.0" prefHeight="46.0" prefWidth="352.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_answer2" layoutX="399.0" layoutY="168.0" prefHeight="46.0" prefWidth="352.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_answer3" layoutX="32.0" layoutY="262.0" prefHeight="46.0" prefWidth="352.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_answer4" layoutX="399.0" layoutY="262.0" prefHeight="46.0" prefWidth="352.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="156.0" prefHeight="70.0" prefWidth="27.0" text="1)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="379.0" layoutY="156.0" prefHeight="70.0" prefWidth="27.0" text="2)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="250.0" prefHeight="70.0" prefWidth="27.0" text="3)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="379.0" layoutY="250.0" prefHeight="70.0" prefWidth="27.0" text="4)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_choice" layoutX="179.0" layoutY="364.0" onKeyPressed="#keyPressed" prefHeight="26.0" prefWidth="27.0" />
+            <Label layoutX="62.0" layoutY="367.0" text="Choice Number:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="tf_invalid" alignment="CENTER" layoutX="239.0" layoutY="364.0" prefHeight="26.0" prefWidth="222.0" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_exit" layoutX="632.0" layoutY="357.0" mnemonicParsing="false" onAction="#goExit" prefHeight="41.0" prefWidth="93.0" text="Exit">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Label layoutX="565.0" layoutY="127.0" prefHeight="34.0" prefWidth="49.0" text="Grade:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_gradeQ" layoutX="615.0" layoutY="131.0" prefHeight="26.0" prefWidth="79.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ems.ChangeUsername">
+   <children>
+      <AnchorPane prefHeight="430.0" prefWidth="763.0" style="-fx-background-color: #7A9E9F;">
+         <children>
+            <Label layoutX="129.0" layoutY="14.0" text="Manage Account: Change Username" textFill="WHITE">
+               <font>
+                  <Font name="Lato Light Italic" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="194.0" prefHeight="43.0" prefWidth="271.0" text="New Username:">
+               <font>
+                  <Font name="Lato Semibold Italic" size="34.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_back" layoutX="438.0" layoutY="351.0" mnemonicParsing="false" onAction="#returnPage" prefHeight="43.0" prefWidth="79.0" text="Back">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_updateUsername" layoutX="244.0" layoutY="351.0" mnemonicParsing="false" onAction="#updateUsername" prefHeight="43.0" prefWidth="111.0" text="Update">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="label_usernameChanged" layoutX="244.0" layoutY="59.0" textFill="#00ff6b" wrapText="true">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_usernameChanged" layoutX="442.0" layoutY="203.0" prefWidth="176.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ems.StudentPage">
+   <children>
+      <AnchorPane prefHeight="430.0" prefWidth="278.0" style="-fx-background-color: #7A9E9F;">
+         <children>
+            <Label layoutX="17.0" layoutY="14.0" text="Manage Account" textFill="WHITE">
+               <font>
+                  <Font name="Lato Light Italic" size="35.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_changeUsername" layoutX="80.0" layoutY="161.0" mnemonicParsing="false" onAction="#changeUsername" text="Change Username">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_changePass" layoutX="80.0" layoutY="215.0" mnemonicParsing="false" onAction="#changePass" text="Change Password">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_printData" layoutX="80.0" layoutY="269.0" mnemonicParsing="false" onAction="#printData" text="Show Information">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="430.0" prefWidth="482.0">
+         <children>
+            <Label layoutX="78.0" layoutY="14.0" text="Welcome, " textFill="WHITE">
+               <font>
+                  <Font name="Lato Semibold Italic" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_firstName" layoutX="232.0" layoutY="14.0" text="'firstName'" textFill="WHITE">
+               <font>
+                  <Font name="Lato Semibold Italic" size="35.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="113.0" fitWidth="113.0" layoutX="369.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/studying.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="button_answerExam" layoutX="188.0" layoutY="161.0" mnemonicParsing="false" onAction="#answerExam" prefHeight="30.0" prefWidth="123.0" text="Take Exam">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_logout" layoutX="188.0" layoutY="269.0" mnemonicParsing="false" onAction="#userLogout" prefHeight="30.0" prefWidth="123.0" text="Logout">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
